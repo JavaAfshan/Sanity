@@ -1,7 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images:{
-        domain:['cdn.sanity.io']
+        remotePatterns:[
+            {
+                protocol: "https",
+                hostname: "full-stack-ecommerce-clothing-web.vercel.app",
+                port: "",
+                pathname: "/**",
+            },
+        ]
     }
 }
 
